@@ -1,0 +1,45 @@
+.input {
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    
+    input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #646464;
+      width: 19rem;
+      &::placeholder {
+        color: #aaa;
+        font-weight: 500;
+      }
+    }
+  }
+  .error {
+    border: 1px solid $error-color !important;
+    margin-bottom: 2.3rem !important;
+    input {
+      color: #fff !important;
+    }
+  }
+  .error__popup {
+    position: absolute;
+    bottom: -35px;
+    color: $error-color;
+    font-weight: 500;
+    font-size: 14px;
+    padding:10px;
+  }
